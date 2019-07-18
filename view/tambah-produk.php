@@ -54,7 +54,7 @@
     	<div>
   		<h1><center>Data Produk</center></h1>
   		    <div class="container">
-     	 <form style="padding-top:40px;"action="controller/koneksioutput.php" method="POST" class="form-horizontal">
+     	 <form style="padding-top:40px;"action="controller/tambah-produk.php" method="POST" class="form-horizontal">
             <div class="form-group row">
               <label for="exampleFormControlTextarea1" class="col-2">Produk</label>
               <input type="text" class="form-control col-5" name="id_produk" placeholder="Produk">

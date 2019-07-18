@@ -54,7 +54,7 @@
 		    	<div>
   		<h1><center>Kategori Produk</center></h1>
   		    <div class="container">
-     	 <form style="padding-top:40px;"action="controller/koneksioutput.php" method="POST" class="form-horizontal">
+     	 <form style="padding-top:40px;"action="controller/tambah-kategori.php" method="POST" class="form-horizontal">
             <div class="form-group row">
             	<label for="exampleFormControlTextarea1" class="col-2">ID Kategori</label>
             	<input type="text" class="form-control col-5" name="idkategori" placeholder="idkategori">
