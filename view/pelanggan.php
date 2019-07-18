@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 <html>
-
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -46,43 +45,40 @@
   </div>
     </div>
   </nav>
-  		<!-- start content -->
-    	<div>
-  		<h1><center>Data Produk</center></h1>
-  		    <div class="container">
-     	 <form style="padding-top:40px;"action="controller/koneksioutput.php" method="POST" class="form-horizontal">
+  	<!-- start content -->
+  		<h3><center>Pelanggan</center></h3>
+  		<div class="container">
+  			<form style="padding-top:40px;"action="controller/koneksioutput.php" method="POST" class="form-horizontal">
             <div class="form-group row">
-              <label for="exampleFormControlTextarea1" class="col-2">Produk</label>
-              <input type="text" class="form-control col-5" name="id_produk" placeholder="Produk">
+              <label for="exampleFormControlTextarea1" class="col-2">ID Pelanggan</label>
+              <input type="text" class="form-control col-5" name="idpelanggan" placeholder="ID Pelanggan">
             </div>
             <div class="form-group row">
-                    <label for="exampleFormControlTextarea1" class="col-2">Warna</label>
-                    <input type="text" class="form-control col-5" name="warna" placeholder="Warna">
+                    <label for="exampleFormControlTextarea1" class="col-2">Nama Pelanggan</label>
+                    <input type="text" class="form-control col-5" name="nama_pelanggan" placeholder="Nama Pelanggan">
             </div>
             <div class="form-group row">
-            	<label for="exampleFormControlTextarea1" class="col-2">Jumlah</label>
-            	<input type="text" class="form-control col-5" name="jumlah" placeholder="Jumlah">
+            	<label for="exampleFormControlTextarea1" class="col-2">Alamat</label>
+            	<input type="text" class="form-control col-5" name="alamat" placeholder="Alamat">
             </div>
             <div class="form-group row">
-                    <label for="exampleFormControlSelect1" class="col-2">Merk</label>
-                    <select class="form-control col-5" id="exampleFormControlSelect1" name="id_merk">
-                      <option value=""></option>
-                      <option value=""></option>
+                    <label for="exampleFormControlSelect1" class="col-2">Jenis Kelamin</label>
+                    <select class="form-control col-5" id="exampleFormControlSelect1" name="jeniskelamin">
+                      <option value="">Laki-Laki</option>
+                      <option value="">Perempuan</option>
                     </select>
                   </div>
             <div class="form-group row">
-                    <label for="exampleFormControlSelect1" class="col-2">Kategori</label>
-                    <select class="form-control col-5" id="exampleFormControlSelect1" name="id_kategori">
-                      <option value=""></option>
-                      <option value=""></option>
-                    </select>
-                  </div>
+                    <label for="exampleFormControlTextarea1" class="col-2">UserName </label>
+                    <input type="text" class="form-control col-5" name="username" placeholder="UserName">
+            </div>
+			 <div class="form-group row">
+            	<label for="exampleFormControlTextarea1" class="col-2">Password</label>
+            	<input type="text" class="form-control col-5" name="password" placeholder="Password">
+            </div>
+       	</div>
             	<p></p>
             <button type="submit" class="btn btn-primary">Submit</button>
           </form>
-          	</div>
-  		</div>
-  		<!-- finish content -->
-
 </body>
 </html>
