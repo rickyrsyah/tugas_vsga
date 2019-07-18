@@ -10,6 +10,7 @@
 </head>
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container">
     <a class="navbar-brand" href="#"></a>
       <img src="assets/img/logo.png" height="64px">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -31,8 +32,14 @@
             <a class="dropdown-item" href="view/tambah-merk.php">Tambah Merk</a>
           </div>
         </li>
-        <li class="nav-item">
-          <a class="nav-link" href="view/lihat-data.php">View Data</a>
+        <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  View Data
+              </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="view/view-data-produk.php">Data Produk</a>
+                  <a class="dropdown-item" href="view/view-data-transaksi.php">Data Transaksi</a>
+                </div>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">
