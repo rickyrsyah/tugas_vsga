@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Latihan Pertemuan ke-11</title>
+  <title>Pelanggan</title>
   <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
   <script src="../assets/js/jquery.slim.min.js"></script>
   <script src="../assets/js/bootstrap.min.js"></script>
@@ -35,7 +35,7 @@
           </div>
         </li>
         <li class="nav-item">
-          <a class="nav-link" href="view/lihat-data.php">View Data</a>
+          <a class="nav-link" href="lihat-data.php">View Data</a>
         </li>
       </ul>
       <form class="form-inline my-2 my-lg-0">

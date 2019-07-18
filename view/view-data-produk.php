@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html>
-
-<head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <title>Latihan Pertemuan ke-11</title>
-  <link rel="stylesheet" href="../assets/css/bootstrap.min.css">
-  <script src="../assets/js/jquery.slim.min.js"></script>
-  <script src="../assets/js/bootstrap.min.js"></script>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Latihan Pertemuan ke-11</title>
+	<link rel="stylesheet" href="../assets/css/bootstrap.min.css">
+	<script src="../assets/js/jquery.slim.min.js"></script>
+	<script src="../assets/js/bootstrap.min.js"></script>
 </head>
 <body>
-  <div class="container">
-  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+	<div class="container">
+	<nav class="navbar navbar-expand-lg navbar-light bg-light">
     <a class="navbar-brand" href="#"></a>
       <img src="../assets/img/logo.png" height="64px">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,23 +48,19 @@
     </div>
   </nav>
 </div>
-    <!-- start content -->
-              <div>
-      <h1><center>Merk</center></h1>
-          <div class="container">
-       <form style="padding-top:40px;"action="controller/koneksioutput.php" method="POST" class="form-horizontal">
-            <div class="form-group row">
-              <label for="exampleFormControlTextarea1" class="col-2">ID Merk</label>
-              <input type="text" class="form-control col-5" name="idmerk" placeholder="idmerk">
-            </div>
-            <div class="form-group row">
-              <label for="exampleFormControlTextarea1" class="col-2">Nama Merk</label>
-              <input type="text" class="form-control col-5" name="nama_merk" placeholder="nama_merk">
-            </div>
-              <p></p>
-            <button type="submit" class="btn btn-primary">Submit</button>
-          </form>
-            </div>
-      </div>
-    </body>
+ 		<h2><center>Database Barang</center></h2>
+  		<br/>
+ 			<table border="1" align="center">
+   				<tr>
+			<!--<th>NO</th> -->
+      				<th>NO</th>
+      				<th>ID Produk</th>
+      				<th>Nama Produk</th>
+      				<th>Jumlah</th>
+      				<th>Harga</th>
+      				<th>Merk</th>
+      				<th>Kategori</th>
+    			</tr>
+  			</table>
+	</body>
 </html>
