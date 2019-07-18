@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.9.0.1
+-- version 4.8.3
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Waktu pembuatan: 16 Jul 2019 pada 09.52
--- Versi server: 10.3.16-MariaDB
--- Versi PHP: 7.1.30
+-- Generation Time: Jul 18, 2019 at 09:55 AM
+-- Server version: 10.1.36-MariaDB
+-- PHP Version: 7.2.11
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET AUTOCOMMIT = 0;
@@ -25,7 +25,7 @@ SET time_zone = "+00:00";
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `kategori`
+-- Table structure for table `kategori`
 --
 
 CREATE TABLE `kategori` (
@@ -36,7 +36,7 @@ CREATE TABLE `kategori` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `merk`
+-- Table structure for table `merk`
 --
 
 CREATE TABLE `merk` (
@@ -47,16 +47,78 @@ CREATE TABLE `merk` (
 -- --------------------------------------------------------
 
 --
--- Struktur dari tabel `produk`
+-- Table structure for table `pelanggan`
+--
+
+CREATE TABLE `pelanggan` (
+  `id_pelanggan` int(10) NOT NULL,
+  `nama_pelanggan` varchar(25) NOT NULL,
+  `alamat` varchar(100) NOT NULL,
+  `jenis_kelamin` enum('laki-laki','perempuan') NOT NULL,
+  `username` varchar(20) NOT NULL,
+  `password` varchar(32) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `produk`
 --
 
 CREATE TABLE `produk` (
   `id_produk` int(4) NOT NULL,
+  `nama_produk` varchar(20) NOT NULL,
   `warna` varchar(10) NOT NULL,
   `jumlah` int(30) NOT NULL,
   `id_merk` varchar(20) NOT NULL,
   `id_kategori` varchar(20) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `transaksi`
+--
+
+CREATE TABLE `transaksi` (
+  `id_transaksi` int(10) NOT NULL,
+  `tanggal_transaksi` datetime NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `total_transaksi` int(10) NOT NULL,
+  `id_pelanggan` int(10) NOT NULL,
+  `id_produk` int(10) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Indexes for dumped tables
+--
+
+--
+-- Indexes for table `pelanggan`
+--
+ALTER TABLE `pelanggan`
+  ADD PRIMARY KEY (`id_pelanggan`);
+
+--
+-- Indexes for table `transaksi`
+--
+ALTER TABLE `transaksi`
+  ADD PRIMARY KEY (`id_transaksi`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `pelanggan`
+--
+ALTER TABLE `pelanggan`
+  MODIFY `id_pelanggan` int(10) NOT NULL AUTO_INCREMENT;
+
+--
+-- AUTO_INCREMENT for table `transaksi`
+--
+ALTER TABLE `transaksi`
+  MODIFY `id_transaksi` int(10) NOT NULL AUTO_INCREMENT;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
