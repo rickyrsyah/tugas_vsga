@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jul 18, 2019 at 09:23 AM
+-- Generation Time: Jul 18, 2019 at 09:55 AM
 -- Server version: 10.1.36-MariaDB
 -- PHP Version: 7.2.11
 
@@ -67,6 +67,7 @@ CREATE TABLE `pelanggan` (
 
 CREATE TABLE `produk` (
   `id_produk` int(4) NOT NULL,
+  `nama_produk` varchar(20) NOT NULL,
   `warna` varchar(10) NOT NULL,
   `jumlah` int(30) NOT NULL,
   `id_merk` varchar(20) NOT NULL,
